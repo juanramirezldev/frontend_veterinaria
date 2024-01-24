@@ -17,10 +17,6 @@ import CambiarPwd from "./screens/cambiarPwdPerfil";
 
 const router = createBrowserRouter([
     {
-       
-        
-      
-
         path:"/",
         element:<Footer/>,
         children:[
