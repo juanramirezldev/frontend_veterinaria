@@ -52,6 +52,7 @@ const LoginScreen = () =>{
                 const url = `${import.meta.env.VITE_BACKEND_URL}/veterinarios/auth`
                 const user = await axios.post(url, payload)
                 setAuth(user.data)
+                console.log("desde handleSubmit", user.data)
                 
         
                 if(user.data.token === null){
