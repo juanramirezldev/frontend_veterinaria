@@ -45,6 +45,7 @@ const LoginScreen = () =>{
             email: form.email,
             password: form.password
         }
+        console.log("desde submit", payload)
         
 
         if(payload.email !== undefined && payload.password !== undefined){
