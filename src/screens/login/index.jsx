@@ -51,6 +51,7 @@ const LoginScreen = () =>{
         if(payload.email !== undefined && payload.password !== undefined){
             console.log("desde handleSubmit if", payload)
             try {
+                console.log("desde try catch login")
                 const url = `${import.meta.env.VITE_BACKEND_URL}/veterinarios/auth`
                 const user = await axios.post(url, payload)
                 setAuth(user.data)
